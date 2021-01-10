@@ -1,0 +1,36 @@
+<template>
+  <lightning-card
+    title="Template Loop ForEach - Array Of Names"
+    icon-name="custom:custom4"
+  >
+    <div class="slds-var-m-around_medium">
+      <ul class="slds-var-m-around_medium">
+        <template for:each={studentList} for:item="student">
+          <p key={student} class="list-group-item-action list-group-item">
+            <b>{student}</b>
+          </p>
+        </template>
+      </ul>
+    </div>
+  </lightning-card>
+  <hr />
+  <lightning-card
+    title="Template Loop ForEach - Array Of Objects"
+    icon-name="custom:custom5"
+  >
+    <div class="slds-var-m-around_medium">
+      <ul class="slds-var-m-around_medium">
+        <template for:each={developers} for:item="developer">
+          <p key={developer.id} class="list-group-item-action list-group-item">
+            <b>{developer.name}: {developer.language}, Age: {developer.age}</b>
+          </p>
+        </template>
+      </ul>
+    </div>
+
+    <p class="slds-m-around_medium" slot="footer">
+      This component demonstrates the use of forEach loop for looping a list of
+      data in the html document. C_4
+    </p>
+  </lightning-card>
+</template>

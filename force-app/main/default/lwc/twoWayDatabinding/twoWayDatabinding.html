@@ -1,0 +1,28 @@
+<template>
+  <lightning-card title="Two Way Data Binding" icon-name="custom:custom3">
+    <div class="slds-var-m-around_medium">
+      <div class="slds-var-m-around_medium">
+        <p class="slds-text-align_center"><b>{defaultMsg}</b></p>
+      </div>
+
+      <lightning-input
+        onchange={handleChange}
+        name="message"
+        label="Type Something...."
+        type="text"
+        value={inputText}
+      >
+      </lightning-input>
+    </div>
+
+    <p class="slds-m-around_medium" slot="footer">
+      This component demonstrates the flow of data between the HTML and the
+      controller (js file). This is possible through the use of input element in
+      the html. The text changes in the UI as value is entered into the input
+      field. Since spring 20 release, @track is no more necessary to achieve
+      this. C_3
+    </p>
+  </lightning-card>
+</template>
+
+<!-- twoWayDatabinding -->

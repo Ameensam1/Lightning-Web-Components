@@ -1,0 +1,18 @@
+{
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/.sfdx": true
+  },
+  "cSpell.words": [
+    "account",
+    "databinding",
+    "datatable",
+    "one",
+    "way"
+  ],
+  "salesforcedx-vscode-core.show-cli-success-msg": false,
+  "cSpell.ignoreWords": [
+    "corden"
+  ]
+}

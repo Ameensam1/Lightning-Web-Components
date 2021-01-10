@@ -1,0 +1,47 @@
+<template>
+  <lightning-card
+    title="Template Loop Iterator - Array Of Objects"
+    icon-name="custom:custom6"
+  >
+    <div class="slds-var-m-around_medium">
+      <ul class="slds-var-m-around_medium">
+        <template iterator:dev={developers}>
+          <div key={dev.value.id}>
+            <div class="center">
+              <a
+                href="#"
+                if:true={dev.first}
+                class="header list-group-item-action list-group-item"
+                ><strong>Names and age of developers </strong></a
+              >
+            </div>
+            <p class="list-group-item-action list-group-item">
+              <b
+                >{dev.value.name}: {dev.value.language}, Age: {dev.value.age}</b
+              >
+            </p>
+            <div class="center">
+              <a
+                href="#"
+                if:true={dev.last}
+                class="header list-group-item-action list-group-item"
+                ><strong>DigiAppForce&copy; 2021</strong></a
+              >
+            </div>
+          </div>
+        </template>
+      </ul>
+    </div>
+
+    <p class="slds-m-around_medium" slot="footer">
+      This component demonstrates the use of iterator loop for looping a list of
+      data in the html document. The iterator is not much different from forEach
+      other than its flexibility in allowing you to target a specific item in
+      the list by assigning in it as first and/or last item. Leveraging the
+      if-true directive with such feature will ensure the item loop just ones.
+      E.g the heading of this list of developers names. C_5
+    </p>
+  </lightning-card>
+</template>
+
+<!-- templateLoopIterator -->
