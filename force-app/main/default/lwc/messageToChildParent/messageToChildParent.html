@@ -1,0 +1,30 @@
+<template>
+  <lightning-card title="Parent Component" icon-name="custom:custom15">
+    <div class="slds-var-m-around_medium">
+      <c-message-from-parent-child
+        message={defaultMsg}
+      ></c-message-from-parent-child>
+      <c-message-from-parent-child
+        class-name="blue"
+        message={blueMsg}
+      ></c-message-from-parent-child>
+      <c-message-from-parent-child
+        class-name="green"
+        message={greenMsg}
+      ></c-message-from-parent-child>
+      <c-message-from-parent-child
+        class-name="orange"
+        message={orangeMsg}
+      ></c-message-from-parent-child>
+    </div>
+    <p class="slds-m-around_medium" slot="footer">
+      This component demonstrates communication between a parent and child
+      component where data flows from the parent component to the child
+      component based on properties made public at the child's controller level
+      as a placeholder using
+      <strong class="red">@api</strong> and then passed as a property to the
+      encapsulated child component in the parent template with data set at
+      parent level. C-11
+    </p>
+  </lightning-card>
+</template>

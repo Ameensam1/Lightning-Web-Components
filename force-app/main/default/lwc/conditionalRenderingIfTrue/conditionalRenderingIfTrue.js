@@ -1,4 +1,4 @@
-import { LightningElement } from 'lwc';
+import { LightningElement } from "lwc";
 
 export default class ConditionalRenderingIfTrue extends LightningElement {
   showData = false;
@@ -42,14 +42,13 @@ export default class ConditionalRenderingIfTrue extends LightningElement {
     }
   ];
 
-
   get getButtonLabel() {
-    return this.showData === true ? this.btnLabel = 'Hide Developers' : this.btnLabel = "Show Developers";
+    return this.showData === true
+      ? (this.btnLabel = "Hide Developers")
+      : (this.btnLabel = "Show Developers");
   }
   handleClick() {
     this.showData = !this.showData;
     this.getButtonLabel();
   }
-
-
 }

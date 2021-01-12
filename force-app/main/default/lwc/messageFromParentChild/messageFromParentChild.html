@@ -1,0 +1,16 @@
+<template>
+  <lightning-card title="Child Component" icon-name="custom:custom16">
+    <div class="slds-var-m-around_medium">
+      <template if:true={showText}>
+        <div class={getMsgClass}>{message}</div>
+      </template>
+      <lightning-button
+        label={btnLabel}
+        variant={variant}
+        onclick={displayTextHandler}
+      ></lightning-button>
+    </div>
+  </lightning-card>
+</template>
+
+<!-- messageFromParentChild -->

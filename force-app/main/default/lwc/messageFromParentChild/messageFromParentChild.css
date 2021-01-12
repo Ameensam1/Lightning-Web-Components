@@ -1,0 +1,28 @@
+.msg {
+  padding: 20px;
+  background-color: red;
+  color: white;
+  opacity: 1;
+  transition: opacity 0.6s;
+  margin-bottom: 15px;
+}
+
+.msg.blue {
+  background-color: #1a508b;
+}
+.msg.green {
+  background-color: #184d47;
+}
+.msg.orange {
+  background-color: #f58634;
+}
+
+.background {
+  background: darkcyan;
+  color: white;
+}
+
+.red {
+  color: red;
+  font: bold;
+}

@@ -1,0 +1,21 @@
+<template>
+  <lightning-card title="Parent" icon-name="custom:custom17">
+    <div class="align">
+      <p>
+        <button class="customBtn" onclick={displayHandler}>
+          Show Contacts
+        </button>
+      </p>
+      <template if:true={showContacts}>
+        <div class="slds-var-m-around_medium">
+          <c-biz-card-c contacts-info={contactsInfo}></c-biz-card-c>
+        </div>
+      </template>
+    </div>
+
+    <p class="slds-m-around_medium" slot="footer">
+      Rendering an array of objects parsed by the parent component inside child
+      component. C-12
+    </p>
+  </lightning-card>
+</template>

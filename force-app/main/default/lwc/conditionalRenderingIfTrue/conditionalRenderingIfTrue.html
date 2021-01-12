@@ -1,8 +1,14 @@
 <template>
-  <lightning-card title='Conditional Rendering If True directive' icon-name='custom:custom7'>
-
-    <div class='slds-var-m-around_medium'>
-      <lightning-button label={btnLabel} variant='brand' onclick={handleClick}></lightning-button>
+  <lightning-card
+    title="Conditional Rendering If True directive"
+    icon-name="custom:custom7"
+  >
+    <div class="slds-var-m-around_medium">
+      <lightning-button
+        label={btnLabel}
+        variant="brand"
+        onclick={handleClick}
+      ></lightning-button>
     </div>
     <template if:true={showData}>
       <div class="slds-var-m-around_medium">
@@ -10,16 +16,26 @@
           <template iterator:dev={developers}>
             <div key={dev.value.id}>
               <div class="center">
-                <a href="#" if:true={dev.first} class="header list-group-item-action list-group-item"><strong>Names and
-                    age of
-                    developers </strong></a>
+                <a
+                  href="#"
+                  if:true={dev.first}
+                  class="header list-group-item-action list-group-item"
+                  ><strong>Names and age of developers </strong></a
+                >
               </div>
               <p class="list-group-item-action list-group-item">
-                <b>{dev.value.name}: {dev.value.language}, Age: {dev.value.age}</b>
+                <b
+                  >{dev.value.name}: {dev.value.language}, Age:
+                  {dev.value.age}</b
+                >
               </p>
               <div class="center">
-                <a href="#" if:true={dev.last}
-                  class="header list-group-item-action list-group-item"><strong>DigiAppForce&copy; 2021</strong></a>
+                <a
+                  href="#"
+                  if:true={dev.last}
+                  class="header list-group-item-action list-group-item"
+                  ><strong>DigiAppForce&copy; 2021</strong></a
+                >
               </div>
             </div>
           </template>
@@ -27,12 +43,13 @@
       </div>
     </template>
 
-    <p class='slds-m-around_medium' slot='footer'>
-      This component demonstrates how to toggle display on and off and conditionally render an element if the condition
-      parsed to
-      the directive is true. For example, changing the button label based on state.
-      In essence, something in the controller must be true for the elements to render. The logic used in building this
-      component removes the need for if-false directive to achieve the toggle functionality.
+    <p class="slds-m-around_medium" slot="footer">
+      This component demonstrates how to toggle display on and off and
+      conditionally render an element if the condition parsed to the directive
+      is true. For example, changing the button label based on state. In
+      essence, something in the controller must be true for the elements to
+      render. The logic used in building this component removes the need for
+      if-false directive to achieve the toggle functionality. C-6
     </p>
   </lightning-card>
 </template>

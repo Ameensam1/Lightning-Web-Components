@@ -1,0 +1,25 @@
+.blueBar {
+  background: #111d5e;
+  height: 50px;
+  margin: 10px;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+}
+.cyanBar {
+  background: darkcyan;
+  height: 50px;
+  margin: 10px;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+}
+
+.redBar {
+  background: red;
+  height: 50px;
+  margin: 10px;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+}

@@ -1,0 +1,38 @@
+<template>
+  <lightning-card title="Sign Up Page" icon-name="custom:custom11">
+    <div class="slds-var-m-around_medium">
+      <lightning-input-name
+        label="Sign Up Form"
+        suffix="The 3rd"
+        salutation="Mr."
+        options={salutationOptions}
+        fields-to-display={signUpFieldList}
+      ></lightning-input-name>
+      <lightning-input type="text" label="First Name"></lightning-input>
+      <lightning-input type="text" label="Last Name"></lightning-input>
+      <lightning-input type="email" label="Email"></lightning-input>
+      <lightning-input type="password" label="Password"></lightning-input>
+      <lightning-input
+        type="password"
+        label="Confirm Password"
+      ></lightning-input>
+      <lightning-button
+        label="Sign Up"
+        title="Sign Up"
+        variant="brand"
+        class="slds-m-left_x-small"
+        onclick={submitHandler}
+      ></lightning-button>
+      <lightning-button
+        label="Back"
+        title="Back"
+        variant="destructive"
+        class="slds-m-left_x-small"
+        onclick={handleClick}
+      ></lightning-button>
+    </div>
+    <p class="slds-m-around_medium" slot="footer">
+      Clicking of sign up from the default page renders this page.
+    </p>
+  </lightning-card>
+</template>

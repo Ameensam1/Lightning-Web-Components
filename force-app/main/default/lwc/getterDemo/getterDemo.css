@@ -1,0 +1,35 @@
+.inline {
+  color: red;
+}
+
+.box {
+  border: 2px solid green;
+  background-color: white;
+  color: black;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+  width: 100px;
+}
+
+.button {
+  border: 1px solid green;
+  background-color: white;
+  height: 100px;
+  width: 100px;
+  color: black;
+  cursor: pointer;
+  padding: 14px 28px;
+}
+
+.red {
+  background: red;
+  color: white;
+}
+
+.green {
+  background: rgb(5, 66, 36);
+  color: white;
+}

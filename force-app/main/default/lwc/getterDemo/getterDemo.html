@@ -1,0 +1,36 @@
+<template>
+  <lightning-card title="Getter Demo 1" icon-name="custom:custom8">
+    <div class="slds-var-m-around_medium">
+      <lightning-button
+        label={getBtnLabel}
+        variant="destructive"
+        onclick={handleRequest}
+      >
+      </lightning-button>
+    </div>
+    <template if:true={sendData}>
+      <div class="slds-var-m-around_medium">{getMessage}</div>
+    </template>
+    <hr />
+    <hr />
+    <lightning-card
+      title="Getter Demo 2 - Dynamic Class"
+      icon-name="custom:custom9"
+    >
+      <div class="slds-var-m-around_medium">
+        <button onclick={handleClick}>ON</button>
+        <button onclick={handleClick}>OFF</button>
+      </div>
+      <div class="slds-var-m-around_medium">
+        <div class={getSelectedBtn}>{btnStatus}</div>
+      </div>
+    </lightning-card>
+
+    <p class="slds-m-around_medium" slot="footer">
+      This component demonstrates the usage of
+      <strong><span class="inline">Getter Method</span></strong> among other
+      things as one of the most useful and versatile methods used for fetching
+      data needed to the UI . C-7
+    </p>
+  </lightning-card>
+</template>

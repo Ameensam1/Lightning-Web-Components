@@ -1,0 +1,15 @@
+<template>
+  <lightning-card title="Call child method" icon-name="custom:custom19">
+    <div class="slds-var-m-around_medium">
+      <div class="parent-wrapper">
+        <button class="btn" onclick={handleColor}>Change Bar Color</button>
+      </div>
+      <div class="child-wrapper">
+        <c-bar-child-method-call
+          class-name={className}
+        ></c-bar-child-method-call>
+      </div>
+    </div>
+    <p class="slds-m-around_medium" slot="footer">C-14</p>
+  </lightning-card>
+</template>

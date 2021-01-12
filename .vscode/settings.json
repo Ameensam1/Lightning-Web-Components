@@ -13,6 +13,13 @@
   ],
   "salesforcedx-vscode-core.show-cli-success-msg": false,
   "cSpell.ignoreWords": [
-    "corden"
+    "btn",
+    "corden",
+    "dbpassword",
+    "dbusername",
+    "get",
+    "seleted",
+    "standford",
+    "style"
   ]
 }

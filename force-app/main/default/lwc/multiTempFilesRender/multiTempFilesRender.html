@@ -1,0 +1,29 @@
+<template>
+  <lightning-card title="Render Multiple Template" icon-name="custom:custom12">
+    <h2 class="slds-text-align_center slds-text-heading_medium">
+      <strong> Default Page</strong>
+    </h2>
+    <div class="slds-var-m-around_medium">
+      <lightning-button
+        label="Sign up"
+        variant="destructive"
+        title="Sign up"
+        class="slds-m-left_x-small"
+        onclick={handleClick}
+      ></lightning-button>
+      <lightning-button
+        label="Sign in"
+        variant="success"
+        title="Sign in"
+        class="slds-m-left_x-small"
+        onclick={handleClick}
+      ></lightning-button>
+    </div>
+    <p class="slds-m-around_medium" slot="footer">
+      This component demonstrates how multiple pages can be dynamically rendered
+      from a single component. The approach here is to use separate template
+      files within the same folder to render component based on user actions.
+      The required page renders based on the button clicked. C-9
+    </p>
+  </lightning-card>
+</template>

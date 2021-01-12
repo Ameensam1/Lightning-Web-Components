@@ -1,0 +1,11 @@
+<template>
+  <template iterator:contact={contactsInfo}>
+    <div class="card" key={contact.value.id}>
+      <img src={contact.value.imageUrl} alt={contact.value.name} />
+      <h1>{contact.value.name}</h1>
+      <p class="title">{contact.value.title}</p>
+      <p>{contact.value.company}</p>
+      <p><button>{contact.value.btnText}</button></p>
+    </div>
+  </template>
+</template>
